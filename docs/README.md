@@ -1,8 +1,8 @@
 # 📘 Flagit Documentation
 
-Welcome to the **Flagit** docs! Check out the Table of Contents to navigate to other pages or scroll down to see an overview of the technical architecture.
+Welcome to the Flagit docs!
 
-## 📚 Table of Contents
+## 📚 Quick Links
 
 - [Rationale](./rationale.md)
 - [Technical Decisions](./technical-decisions.md)
@@ -24,20 +24,22 @@ An **API wrapper around Firebase**, enabling access to the database by both the 
 ### 3. Bot
 
 A set of **Bot implementations** that convert received messages into anonymous, cacheable data.
+
 There is one implementation for each communication platform we support.
 
 ### 🔄 Data Flow
 
-Flagit follows a **uni-directional data flow** model:
-**Bot → Query API → Dashboard**
+Flagit follows a uni-directional data flow model:
+
+Bot → Query API → Dashboard
 
 You can view the data flow chart here:
 🔗 [Flagit Data Flow (Lucidchart)](https://lucid.app/lucidchart/74546a77-8398-4c58-9c8e-2d86b31f1028/edit?viewport_loc=60%2C185%2C1579%2C873%2C0_0&invitationId=inv_30aee402-57e0-4c57-9679-9da9734cc769)
 
 #### Key Flows:
 
-- **Authentication Flow**
-- **Chat Group Linking Flow**
+- Authentication Flow
+- Chat Group Linking Flow
 
 After setup, user actions are minimal:
 
